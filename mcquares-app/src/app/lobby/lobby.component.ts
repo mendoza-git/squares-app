@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LobbyComponent implements OnInit {
 
+  title = 'Mcsquares';
+
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,27 @@
+.lobby-header {
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+
+    &__title {
+        text-align: center;
+        padding-bottom: 10px;
+
+        .title-text{
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            color: aliceblue;
+
+            .mc {
+                background-color: #d9534f;
+                padding: 5px 5px 0px 5px;
+            }
+
+            .squares-title {
+                margin-left: 5px;
+                background-color: #5bc0de;
+                padding: 0px 5px 0px 5px;
+            }
+        }
+    }
+}
