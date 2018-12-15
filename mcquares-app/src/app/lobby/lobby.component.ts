@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LobbyPlayButtonComponent } from '../lobby/features/lobby-play-button/lobby-play-button.component';
 
 @Component({
   selector: 'app-lobby',
@@ -6,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lobby.component.scss']
 })
 export class LobbyComponent implements OnInit {
-
-  title = 'Mcsquares';
 
   constructor() { }
 

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LobbyComponent } from './lobby/lobby.component';
+import { LobbyPlayButtonComponent } from '../app/lobby/features/lobby-play-button/lobby-play-button.component';
 
 const appRoutes: Routes = [
   { 
@@ -14,7 +15,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    LobbyComponent
+    LobbyComponent,
+    LobbyPlayButtonComponent
   ],
   imports: [
     RouterModule.forRoot(
