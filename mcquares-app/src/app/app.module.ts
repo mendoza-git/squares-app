@@ -1,16 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LobbyComponent } from './lobby/lobby.component';
 
+const appRoutes: Routes = [
+  { 
+    path: 'mcquares-lobby',
+    component: LobbyComponent
+  }
+];
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LobbyComponent
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true }
+    ),
     BrowserModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
