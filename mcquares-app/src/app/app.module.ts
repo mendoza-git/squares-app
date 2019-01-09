@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { LobbyComponent } from './lobby/lobby.component';
 import { LobbyPlayButtonComponent } from '../app/lobby/features/lobby-play-button/lobby-play-button.component';
 import { LobbyPinButtonComponent } from './lobby/features/lobby-pin-button/lobby-pin-button.component';
+import { LoadingSquaresComponent } from './shared/components/loading-squares/loading-squares.component';
 
 const appRoutes: Routes = [
   { 
-    path: 'mcquares-lobby',
+    path: '',
     component: LobbyComponent
   }
 ];
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
     AppComponent,
     LobbyComponent,
     LobbyPlayButtonComponent,
-    LobbyPinButtonComponent
+    LobbyPinButtonComponent,
+    LoadingSquaresComponent
   ],
   imports: [
     RouterModule.forRoot(
